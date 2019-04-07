@@ -12,13 +12,15 @@ private let reuseIdentifier = "Cell"
 
 class BooksCollectionViewController: UICollectionViewController {
     
-    init(){
+    init(author: Author? = nil){
+        self.author = author
         super.init(
             collectionViewLayout: UICollectionViewFlowLayout()
         )
     }
     
     required init?(coder aDecoder: NSCoder){
+        author = nil
         super.init(coder: aDecoder)
     }
     
@@ -59,6 +61,8 @@ class BooksCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    let author: Author?
     
     var books: [Book]?
     let serviceClient = getServiceClient()
@@ -109,6 +113,16 @@ class BooksCollectionViewController: UICollectionViewController {
         cell.book = books?[indexPath.row]
         
         return cell
+    }
+    
+    //chamar a view
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigationController?
+            .pushViewController(
+                BookViewController(
+                    book: books![indexPath.row]
+                ), animated: true
+        )
     }
     
     // MARK: UICollectionViewDelegate
