@@ -70,11 +70,11 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Ni6-da-hM2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-554" id="BGg-OT-1TW"/>
-                <constraint firstItem="Ni6-da-hM2" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" id="MF0-Th-HDx"/>
                 <constraint firstItem="fjj-5D-2KW" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="ODJ-xg-MUH"/>
-                <constraint firstItem="Ni6-da-hM2" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="eW3-FY-rbg"/>
-                <constraint firstItem="Ni6-da-hM2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-375" id="jfZ-Aw-KI8"/>
+                <constraint firstItem="Ni6-da-hM2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ONt-1u-iGw"/>
+                <constraint firstItem="Ni6-da-hM2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nt5-BX-QV7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ni6-da-hM2" secondAttribute="bottom" id="qlH-fs-P1h"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ni6-da-hM2" secondAttribute="trailing" id="urr-zD-hHF"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
